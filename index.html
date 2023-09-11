@@ -990,7 +990,7 @@
                   ["bmp", "jpg", "png", "svg", "webp", "gif"].contains(suffix)
                 ) {
                   return "image";
-                } else if (["mp3", "flac", "wav"].contains(suffix)) {
+                } else if (["mp3", "flac", "wav", "m4a"].contains(suffix)) {
                   return "audio";
                 } else if (
                   ["mp4", "avi", "mkv", "flv", "m3u8"].contains(suffix)
@@ -1029,6 +1029,7 @@
                     "rtf",
                     "vsd",
                     "vsdx",
+                    "pdf",
                   ].contains(suffix)
                 ) {
                   return "office";
