@@ -1199,15 +1199,15 @@
               .querySelector(".btn.download")
               .addEventListener("click", () => (location.href = url));
             document
-              .querySelector(".btn.quote")
+              .querySelector(".btn.direct")
               .addEventListener("click", (event) => {
                 previewHandler.copyTextContent(
                   null,
                   window.api.url + "?file=" + encodeURI(path)
                 );
-                const btn = document.querySelector(".btn.quote");
+                const btn = document.querySelector(".btn.direct");
                 btn.innerHTML = "Copied";
-                setTimeout(() => (btn.innerHTML = "Quote"), 250);
+                setTimeout(() => (btn.innerHTML = "Direct"), 250);
               });
             document
               .querySelector(".btn.share")
@@ -1607,7 +1607,7 @@
             <div class="info">
               <div class="file-name"></div>
               <div class="btn download">Download</div>
-              <div class="btn quote">Quote</div>
+              <div class="btn direct">Direct</div>
               <div class="btn share">Share</div>
             </div>
             <div class="content"></div>
